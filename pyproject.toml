@@ -26,8 +26,8 @@ classifiers = [
 dynamic = ["version"]
 
 [project.urls]
-Repository = "https://github.com/frostming/pdm-packer"
-Homepage = "https://github.com/frostming/pdm-packer"
+Repository = "https://github.com/samtayuk/pdm-buildasset"
+Homepage = "https://github.com/samtayuk/pdm-buildasset"
 
 [project.entry-points.pdm]
 pdm-buildasset = "pdm_buildasset:main"
