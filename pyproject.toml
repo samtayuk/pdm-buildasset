@@ -1,0 +1,37 @@
+[tool.pdm.dev-dependencies]
+dev = [
+    "pdm>=2.4.9",
+]
+
+[tool.pdm]
+version = {source = "scm"}
+
+[project]
+name = "pdm-buildasset"
+description = "A PDM plugin to build external assets such as a react UI."
+authors = [
+    {name = "Samuel Taylor", email = "samtaylor.uk@gmail.com"},
+]
+dependencies = [
+    "pynsist>=2.8",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10"
+]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/frostming/pdm-packer"
+Homepage = "https://github.com/frostming/pdm-packer"
+
+[project.entry-points.pdm]
+pdm-buildasset = "pdm_buildasset:main"
+
+[build-system]
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
